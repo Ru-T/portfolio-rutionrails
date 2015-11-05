@@ -9,7 +9,9 @@
           <% @projects.each do |project| %>
             <div class="col-md-4"><%= image_tag project.image.url %><br>
               <%= project.title %><br>
-              <%= project.description %></div>
+              <%= project.description %><br>
+              <%= link_to 'Source Code', projects_path %><br>
+              <%= link_to 'Live Project', projects_path %>
             </div>
           <% end %>
         </div>
