@@ -1,0 +1,16 @@
+<div class="container">
+  <p id="notice"><%= notice %></p>
+
+  <p>All social media links</p>
+
+    <h1>Ruti Wajnberg</h1>
+      <h3>RUBY/RAILS DEVELOPER | DURHAM, NC</h3>
+        <div class="row">
+          <% @projects.each do |project| %>
+            <div class="col-md-4"><%= image_tag project.image.url %><br>
+              <%= project.title %><br>
+              <%= project.description %></div>
+            </div>
+          <% end %>
+        </div>
+</div>
